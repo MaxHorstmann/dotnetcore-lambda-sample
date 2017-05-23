@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - dotnet restore src
+      - dotnet publish src -c Release
+      - zip lambda.zip src/bin/Release/netcoreapp1.1/publish/*
+      - /root/bin/aws lambda update-function-code --function-name MyLambda --zip-file fileb://lambda.zip
