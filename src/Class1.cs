@@ -5,9 +5,9 @@ using Amazon.Lambda.Core;
 
 [assembly: LambdaSerializerAttribute(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
 
-namespace MyLambda
+namespace MyNamespace
 {
-    public class Class1
+    public class MyClass
     {
     	public object MyFunction()
     	{
@@ -15,3 +15,4 @@ namespace MyLambda
     	}
     }
 }
+g
