@@ -7,6 +7,3 @@ phases:
       - dotnet publish src -c Release
       - zip lambda.zip src/bin/Release/netcoreapp1.1/publish/*
       - /root/bin/aws lambda update-function-code --function-name myTestLambda --zip-file fileb://lambda.zip
-artifacts:
-  files:
-    - lambda.zip
