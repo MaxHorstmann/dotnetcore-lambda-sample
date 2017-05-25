@@ -11,7 +11,7 @@ namespace MyLambda
     {
     	public object MyFunction()
     	{
-    		return new { status = "OK" };
+    		return new { status = "OK", time = DateTime.UtcNow };
     	}
     }
 }
