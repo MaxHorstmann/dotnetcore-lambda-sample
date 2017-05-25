@@ -6,6 +6,6 @@ phases:
       - dotnet restore src
       - dotnet publish src -c Release
       - cd src/bin/Release/netcoreapp1.1/publish
-      - zip ../../../../../lambda.zip *
+      - zip ../../../../../MyProject.zip *
       - cd ../../../../..
-      - /root/bin/aws lambda update-function-code --function-name myTestLambda --zip-file fileb://lambda.zip
+      - /root/bin/aws lambda update-function-code --function-name myTestLambda --zip-file fileb://MyProject.zip
