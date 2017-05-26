@@ -9,7 +9,7 @@ namespace MyNamespace
     {
     	public object MyFunction()
     	{
-    		return new { status = "OK", time = DateTime.UtcNow };
+    		return new { message = "Hello from Lambda!", time = DateTime.UtcNow };
     	}
     }
 }
