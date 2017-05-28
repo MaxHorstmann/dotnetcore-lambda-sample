@@ -9,4 +9,8 @@
     <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.1.0" />
   </ItemGroup>
 
+   <ItemGroup>
+    <DotNetCliToolReference Include="Amazon.Lambda.Tools" Version="1.5.0" />
+  </ItemGroup>
+
 </Project>
